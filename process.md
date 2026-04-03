@@ -1,3 +1,8 @@
+---
+layout: default
+title: development process
+---
+
 # the development of coradenning.site
 
 ## phase 1: domain & dns

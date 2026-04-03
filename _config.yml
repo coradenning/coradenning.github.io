@@ -1,0 +1,23 @@
+title: cora denning
+description: homepage for whatever i want
+url: "https://coradenning.site"
+baseurl: ""
+
+# leave this blank
+theme: 
+
+# let jekyll know where to look for sass/css
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
