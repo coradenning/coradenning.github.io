@@ -22,7 +22,7 @@
 *   **standardized file structure:** 
     *   created `_posts/` for my writing.
     *   created `assets/` to separate my art/images from the code.
-*   **implemented liquid tags:** used `{{ content }}` and `{% for post in site.posts %}` to automate the boring parts of web dev.
+* **implemented liquid tags:** used {% raw %}`{{ content }}` and `{% for post in site.posts %}`{% endraw %} to automate the boring parts of web dev.
 *   **added front matter:** added the `---` blocks to every page so they "plug into" the layouts.
 
 ## phase 4: ugh i hate ruby
