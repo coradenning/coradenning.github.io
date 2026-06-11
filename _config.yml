@@ -16,6 +16,15 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+# give every blog post the post layout automatically,
+# so you never have to add `layout:` to a post's front matter
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
 exclude:
   - Gemfile
   - Gemfile.lock
