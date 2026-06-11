@@ -9,38 +9,33 @@
 </head>
 <body>
 
-<div id="ascii-bg" aria-hidden="true"></div>
-<div id="root-vine" aria-hidden="true"></div>
+<div id="spore-field" aria-hidden="true"></div>
 
-<div class="site-shell">
-
+<header class="site-header">
   <nav class="site-nav" aria-label="main navigation">
-    <a href="/" class="nav-name">cora<br>denning</a>
-
-    <svg id="mycelium-nav" viewBox="0 0 160 300" aria-hidden="true">
-      <!-- animated mycelium root network, drawn by main.js -->
-    </svg>
-
-    <div class="nav-links">
-      <a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>home</a>
-      <a href="/portfolio" {% if page.url contains "portfolio" %}aria-current="page"{% endif %}>work</a>
-      <a href="/blog" {% if page.url contains "blog" or page.url contains "posts" %}aria-current="page"{% endif %}>log</a>
-      <a href="/contact" {% if page.url contains "contact" %}aria-current="page"{% endif %}>contact</a>
-    </div>
+    <a href="/" {% if page.url == "/" %}aria-current="page"{% endif %} data-glyph="⁕">home</a>
+    <span class="nav-dot" aria-hidden="true">·</span>
+    <a href="/portfolio" {% if page.url contains "portfolio" %}aria-current="page"{% endif %} data-glyph="✦">work</a>
+    <span class="nav-dot" aria-hidden="true">·</span>
+    <a href="/blog" {% if page.url contains "blog" or page.url contains "posts" %}aria-current="page"{% endif %} data-glyph="∘">log</a>
+    <span class="nav-dot" aria-hidden="true">·</span>
+    <a href="/contact" {% if page.url contains "contact" %}aria-current="page"{% endif %} data-glyph="⋆">contact</a>
   </nav>
+</header>
 
-  <main class="site-main" id="main-content">
-    {{ content }}
-  </main>
+<main class="site-main" id="main-content">
+  {{ content }}
+</main>
 
-  <footer class="site-footer">
-    <span id="footer-sprite" title="click me..." aria-label="decorative mushroom sprite">⠀⠀⣀⠀
-⢠⣾⣿⡄
-⠀⠙⠛⠁</span>
-    <span>&copy; {{ "now" | date: "%Y" }} cora denning</span>
-  </footer>
-
-</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span id="footer-sprite" aria-label="a small mushroom. click three times." title="...">⣀⠀⣀
+⣿⣿⣿
+⠈⠛⠁</span>
+    <span id="soil-message" aria-live="polite"></span>
+    <span class="footer-copy">&copy; {{ "now" | date: "%Y" }} cora denning</span>
+  </div>
+</footer>
 
 <div id="lightbox" role="dialog" aria-label="image viewer" aria-modal="true">
   <img id="lightbox-img" src="" alt="">
