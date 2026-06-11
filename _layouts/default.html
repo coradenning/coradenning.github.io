@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} | cora denning</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | cora denning</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  {% seo %}
 </head>
 <body>
-    <nav>
-        <a href="/">home</a>
-        <a href="/portfolio">work</a>
-        <a href="/blog">log</a>
-        <a href="/contact">contact</a>
-    </nav>
 
-    <main>
-        {{ content }}
-    </main>
+<div id="ascii-bg" aria-hidden="true"></div>
+<div id="root-vine" aria-hidden="true"></div>
 
-    <footer>
-        <p>&copy; 2026 cora denning. built with jekyll.</p>
-    </footer>
+<div class="site-shell">
+
+  <nav class="site-nav" aria-label="main navigation">
+    <a href="/" class="nav-name">cora<br>denning</a>
+
+    <svg id="mycelium-nav" viewBox="0 0 160 300" aria-hidden="true">
+      <!-- animated mycelium root network, drawn by main.js -->
+    </svg>
+
+    <div class="nav-links">
+      <a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>home</a>
+      <a href="/portfolio" {% if page.url contains "portfolio" %}aria-current="page"{% endif %}>work</a>
+      <a href="/blog" {% if page.url contains "blog" or page.url contains "posts" %}aria-current="page"{% endif %}>log</a>
+      <a href="/contact" {% if page.url contains "contact" %}aria-current="page"{% endif %}>contact</a>
+    </div>
+  </nav>
+
+  <main class="site-main" id="main-content">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <span id="footer-sprite" title="click me..." aria-label="decorative mushroom sprite">⠀⠀⣀⠀
+⢠⣾⣿⡄
+⠀⠙⠛⠁</span>
+    <span>&copy; {{ "now" | date: "%Y" }} cora denning</span>
+  </footer>
+
+</div>
+
+<div id="lightbox" role="dialog" aria-label="image viewer" aria-modal="true">
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="/assets/js/main.js"></script>
 </body>
 </html>

@@ -2,11 +2,21 @@
 layout: default
 title: log
 ---
+
 <h1>the log</h1>
-<ul>
+<p style="color:var(--muted); font-size:.9rem; margin-bottom:2rem">thoughts, notes, process. no particular schedule.</p>
+
+<div class="ascii-divider" aria-hidden="true">⠀⠀⠀⢳⢹⠁⠀⠱⡀⠀⠀⢈⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢳⢹⠁⠀⠱</div>
+
+<ul class="post-list">
   {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a> — {{ post.date | date: "%b %d" }}
-    </li>
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <span class="post-date">{{ post.date | date: "%Y·%m·%d" }}</span>
+  </li>
+  {% else %}
+  <li style="color:var(--muted); font-size:.9rem; border-bottom:1px solid var(--border); padding:.7rem 0">
+    nothing here yet.
+  </li>
   {% endfor %}
 </ul>
