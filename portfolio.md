@@ -17,15 +17,16 @@ title: work
           <span class="tag">scss</span>
           <span class="tag">js</span>
         </div>
-        <div class="project-terminal" aria-hidden="true"><span class="t-prompt">~/coradenning.site $</span> git log --oneline
-a3f9c2e scss + font system
-b1d8e4a animated spore field
-c7a2f1b fairy mode easter egg
+        <div class="project-terminal" aria-hidden="true"><span class="t-prompt">~/coradenning.site $</span> cat README.md
+
+            Source: .
+       Destination: _site
+ Auto-regenerating: enabled
 <span class="t-prompt">~/coradenning.site $</span> <span class="t-cursor">▌</span></div>
       </div>
       <div class="project-card">
-        <h3>your project here</h3>
-        <p>a short description of what you built and what's interesting about it.</p>
+        <h3>super cool example project!!</h3>
+        <p>short description.</p>
         <div class="project-tags">
           <span class="tag">python</span>
           <span class="tag">react</span>
