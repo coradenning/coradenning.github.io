@@ -124,7 +124,7 @@ title: home
   <div class="project-grid">
     <div class="project-card">
       <h3><a href="https://github.com/coradenning/coradenning.github.io">coradenning.site</a></h3>
-      <p>this very site — built with jekyll, hosted on github pages.</p>
+      <p>this very site. built with jekyll, hosted on github pages.</p>
       <div class="project-tags">
         <span class="tag">jekyll</span>
         <span class="tag">scss</span>

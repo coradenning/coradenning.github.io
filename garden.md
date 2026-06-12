@@ -27,17 +27,11 @@ permalink: /garden
 </pre>
   </div>
 
-  <p class="garden-intro">you found it.</p>
+  <p class="garden-intro">you found it!</p>
 
 <pre class="garden-art">
-  this is a place for things
-  that don't have a place yet.
-
-  scraps. sketches. thoughts.
-  experiments that went sideways.
-  ideas not ready to be named.
-
-  not everything needs to be finished.
+  there's nothing more here for you, no more secrets to be found
+  i wish you luck on your journey ahead.
 </pre>
 
   <p class="garden-back">↩ <a href="/">go back</a></p>
