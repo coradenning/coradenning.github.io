@@ -41,10 +41,13 @@ what it does and why...
   <section class="home-section">
     <h2><span>art &amp; design</span></h2>
     <div class="art-gallery">
-      <!-- add your images here:
-      <img src="/assets/images/yourfile.jpg" alt="describe the piece">
-      -->
-      <p style="color:var(--muted); font-size:.82rem; grid-column:1/-1">images coming soon.</p>
+      <img src="/assets/art/pastels.jpg" alt="a pastel drawing of a canal in venice">
+      <p style="color:var(--muted); font-size:.82rem; grid-column:1/-1">a work done in pastels. my reference image was a photo i took of a canal in Venice.</p>
     </div>
+
+    <div class="art-gallery">
+      <img src="/assets/art/sketch.jpg" alt="a sketch of two girls">
+      <p style="color:var(--muted); font-size:.82rem; grid-column:1/-1">a quick sketch i did!</p>
+    </div>  
   </section>
 </div>

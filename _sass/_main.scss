@@ -134,7 +134,7 @@ body::before {
 .hero-name       { grid-column: 2; grid-row: 3; }
 .hero-tagline    { grid-column: 2; grid-row: 4; }
 .hero-links      { grid-column: 2; grid-row: 5; }
-.hero-scroll-hint{ grid-column: 2; grid-row: 6; }
+/* scroll hint is fixed position, not in grid */
 
 
 
@@ -286,8 +286,8 @@ body::before {
 
 // scroll hint at bottom of hero
 .hero-scroll-hint {
-  position: absolute;
-  bottom: 2rem;
+  position: fixed;
+  bottom: 1.75rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -295,8 +295,12 @@ body::before {
   align-items: center;
   gap: .4rem;
   pointer-events: none;
-  opacity: .4;
+  z-index: 50;
+  opacity: 0;
+  transition: opacity .4s;
 }
+// only show on the homepage hero — hide once user scrolls
+.hero-scroll-hint.visible { opacity: .4; }
 
 .scroll-vine {
   display: block;
