@@ -78,16 +78,78 @@ what it does and why...
 
   <section class="home-section">
     <h2><span>art &amp; design</span></h2>
-    <div class="art-gallery">
-      <img src="/assets/art/pastels.jpg" alt="a pastel drawing of a canal in venice" />
-      <p style="color:var(--muted); font-size:.82rem; grid-column:1/-1">a work done in pastels. my reference image was a photo i took of a canal in Venice.</p>
-    </div>
+    <div class="art-grid">
 
-    <div class="art-gallery">
-      <img src="/assets/art/sketch.jpg" alt="a sketch of two girls" />
-      <p style="color:var(--muted); font-size:.82rem; grid-column:1/-1">a quick sketch i did!</p>
-    </div>  
+  <article class="art-card" data-title="venice canal" data-medium="pastels" data-full="/assets/art/pastels.jpg">
+    <div class="art-card-img">
+      <img src="/assets/art/pastels.jpg" alt="a pastel drawing of a canal in venice" loading="lazy" />
+      <div class="art-card-overlay">
+        <span class="art-zoom">⊕ view</span>
+      </div>
+    </div>
+    <div class="art-card-info">
+      <h3 class="art-card-title">venice canal</h3>
+      <span class="art-card-medium">pastels</span>
+      <p class="art-card-desc">worked from a photo i took in venice. trying to capture the light on the water.</p>
+    </div>
+  </article>
+
+  <article class="art-card" data-title="still life" data-medium="pencil" data-full="/assets/art/charcoal_final.jpg">
+    <div class="art-card-img">
+      <img src="/assets/art/charcoal_final.jpg" alt="a charcoal drawing of different desk objects" loading="lazy" />
+      <div class="art-card-overlay">
+        <span class="art-zoom">⊕ view</span>
+      </div>
+    </div>
+    <div class="art-card-info">
+      <h3 class="art-card-title">still life</h3>
+      <span class="art-card-medium">charcoal</span>
+      <p class="art-card-desc">the final project for my art class - a large still life</p>
+    </div>
+  </article>
+
+  <article class="art-card" data-title="still life 2.0" data-medium="charcoal" data-full="/assets/art/charcoal_midterm.jpg">
+    <div class="art-card-img">
+      <img src="/assets/art/charcoal_midterm.jpg" alt="a charcoal drawing of a collection of objects" loading="lazy" />
+      <div class="art-card-overlay">
+        <span class="art-zoom">⊕ view</span>
+      </div>
+    </div>
+    <div class="art-card-info">
+      <h3 class="art-card-title">still life 2.0</h3>
+      <span class="art-card-medium">charcoal</span>
+      <p class="art-card-desc">my midterm project for art class - a large still life</p>
+    </div>
+  </article>
+
+  <article class="art-card" data-title="bunny painting" data-medium="watercolor + ink" data-full="/assets/art/watercolor.jpg">
+    <div class="art-card-img">
+      <img src="/assets/art/watercolor.jpg" alt="a watercolor painting of a small kitchen with bunny figures" loading="lazy" />
+      <div class="art-card-overlay">
+        <span class="art-zoom">⊕ view</span>
+      </div>
+    </div>
+    <div class="art-card-info">
+      <h3 class="art-card-title">bunny painting</h3>
+      <span class="art-card-medium">watercolor</span>
+      <p class="art-card-desc">a gift for mother's day - beatrix potter watercolor exploration</p>
+    </div>
+  </article>
+
+  </div>
   </section>
+</div>
+
+<!-- art lightbox -->
+<div id="art-lightbox" role="dialog" aria-modal="true" aria-label="artwork viewer">
+  <button class="art-lb-close" aria-label="close">✕</button>
+  <div class="art-lb-inner">
+    <img id="art-lb-img" src="" alt="" />
+    <div class="art-lb-meta">
+      <h2 id="art-lb-title"></h2>
+      <span id="art-lb-medium"></span>
+    </div>
+  </div>
 </div>
 
 </main>
