@@ -3,21 +3,16 @@ description: homepage for whatever i want
 url: "https://coradenning.site"
 baseurl: ""
 
-# leave this blank
-theme: 
+theme:
 
-# let jekyll know where to look for sass/css
 sass:
   sass_dir: _sass
   style: compressed
 
-# plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# give every blog post the post layout automatically,
-# so you never have to add `layout:` to a post's front matter
 defaults:
   - scope:
       path: ""
